@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const BMWHeader = () => {
   return (
@@ -7,12 +8,12 @@ export const BMWHeader = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <div className="font-bold text-3xl text-blue-900">BMW</div>
+            <Link to="/" className="font-bold text-3xl text-blue-900">BMW</Link>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-blue-900 font-medium">Модельный ряд</a>
-            <a href="#" className="text-gray-700 hover:text-blue-900 font-medium">Автомобили в наличии</a>
+            <Link to="/catalog" className="text-gray-700 hover:text-blue-900 font-medium">Модельный ряд</Link>
+            <Link to="/catalog" className="text-gray-700 hover:text-blue-900 font-medium">Автомобили в наличии</Link>
             <a href="#" className="text-gray-700 hover:text-blue-900 font-medium">Спецпредложения</a>
             <a href="#" className="text-gray-700 hover:text-blue-900 font-medium">Сервис</a>
             <a href="#" className="text-gray-700 hover:text-blue-900 font-medium">Контакты</a>
